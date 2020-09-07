@@ -11,7 +11,7 @@ document.addEventListener(
       "click",
       function (e) {
         e.preventDefault();
-        if (parseInt(minutesInput) <= 0) return;
+        if (parseInt(minutesInput.value) <= 0) return;
 
         chrome.tabs.query({ active: true, currentWindow: true }, function (
           tabs
