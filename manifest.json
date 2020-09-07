@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Auto-Submit Google Form",
+  "description": "This extension will show a timer and auto-submit Google Form",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto-Submit Google Form</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #minutesInput {
+        padding: 5px;
+        font-size: 1em;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        outline: none;
+        border: 2px solid #a7a6a6;
+      }
+
+      #startBtn {
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #28a745;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      #checkboxContainer {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      #autoSubmitInput {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="number" placeholder="Minutes" id="minutesInput" />
+    <div id="checkboxContainer">
+      <input type="checkbox" id="autoSubmitInput" />
+      <label>Auto Submit Google Form</label>
+    </div>
+    <input type="button" id="startBtn" value="Start" />
+  </body>
+</html>
